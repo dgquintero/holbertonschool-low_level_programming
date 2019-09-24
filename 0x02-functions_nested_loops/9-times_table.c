@@ -8,35 +8,28 @@
  * Return: dont return
  */
 void times_table(void)
-
 {
-	int n;
-	int d;
+	int n = 0;
+	int d = 0;
 
-	for (d = 0 ; d < 10 ; d++)
+	for ( ; n <= 9; n++)
 	{
-		for (n = 0 ; n < 10  ; n++)
+		for ( ; d <= 9; d++)
 		{
-			if (((d * n) / 10) != 0)
-			{
-				_putchar(((d * n) / 10) + '0');
-			}
-		   	else if ((d * n) % 10 != '0')
-			{
+			if (((n * d) / 10) != 0)
+				_putchar(((n * d) / 10) + '0');
+			else if ((n * d) % 10 != 0)
 				_putchar(' ');
-			}
-			else if (d == 0 && n > 0)
-			{
+			else if (n == 0 && d > 0)
 				_putchar(' ');
-			}
-			_putchar((d * n) % 10 + '0');
-			if (n < 9)
+			_putchar((n * d) % 10 + '0');
+			if (d < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
 		}
 		_putchar('\n');
-		n = 0;
+		d = 0;
 	}
 }
