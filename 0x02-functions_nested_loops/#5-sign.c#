@@ -1,0 +1,27 @@
+#include "holberton.h"
+
+/**
+ * print_sign - check the code for Holberton School students.
+ *
+ * @n : parameter to check
+ *
+ * Return: print 1 + if n greater than 0, and print 0 if is zero, -1 less than 0
+ */
+int print_sign(int n)
+{
+	if (n > 0)
+	{
+		return (1);
+		_putchar('+');
+	}
+	if else (n < 0)
+	{
+		return (-1);
+		_putchar('-');
+	}
+	else
+	{
+		return (0);
+		_putchar('0');
+	}
+}
