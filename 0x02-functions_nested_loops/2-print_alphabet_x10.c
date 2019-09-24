@@ -1,9 +1,11 @@
 #include "holberton.h"
 
 /**
- * main - check the code for Holberton School students.
+ * print_alphabet_x10 - check the code for Holberton School students.
  *
- * Return: Always 0.
+ * @void : parameter to check
+ *
+ * Return: dont return
  */
 void print_alphabet_x10(void)
 
