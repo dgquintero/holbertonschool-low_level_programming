@@ -1,0 +1,13 @@
+#include "holberton.h"
+
+/**
+ * add - check the code for Holberton School students.
+ *
+ * @int : parameter to check
+ *
+ * Return: do not return.
+ */
+int add(int n, int d)
+{
+	return (n + d);
+}
