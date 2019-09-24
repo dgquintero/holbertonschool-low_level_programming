@@ -3,15 +3,16 @@
 /**
  * main - check the code for Holberton School students.
  *
- * Return: Always 0.
+ * @void : parameter to check
+ *
+ * Return: 0.
  */
 int main(void)
 {
 int n;
 char m[] = "Holberton";
-int d = sizeof(m);
 
-for (n = 0 ; n < d ; n++)
+for (n = 0 ; n < 9 ; n++)
 _putchar(m[n]);
 _putchar('\n');
 return (0);
