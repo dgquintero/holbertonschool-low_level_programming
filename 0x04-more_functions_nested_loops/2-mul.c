@@ -1,14 +1,16 @@
 #include "holberton.h"
 /**
- * _isdigit - check the code for Holberton School students.
+ * mul - check the code for Holberton School students.
  *
- * @c : parameter to check
+ * @a : parameters to check
  *
- * Return: 1 if is a digit and 0 if is not.
+ * @b : parameters to check
+ * Return : 1 the mult of this 2 numbers.
  */
 int mul(int a, int b)
 {
 	int d;
+
 	d = (a * b);
 	return (d);
 }
