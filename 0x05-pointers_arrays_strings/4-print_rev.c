@@ -1,10 +1,10 @@
 #include "holberton.h"
 /**
- * print_rev - prints a string, in reverse, followed by a new line.
+ * print_rev- prints a string, in reverse, followed by a new line.
  *
  * @s : is a pointer to a string
  *
- * Return: not return.
+ * Return : not return.
  */
 
 void print_rev(char *s)
@@ -13,7 +13,7 @@ void print_rev(char *s)
 
 	for (n = 0; s[n] != '\0'; n++)
 		f++;
-	for (n = f ; n >= 0; n--)
+	for (n = f - 1 ; n >= 0; n--)
 		_putchar(s[n]);
 	_putchar('\n');
 }
