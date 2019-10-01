@@ -1,4 +1,11 @@
 #include "holberton.h"
+/**
+ * _puts - prints a string, followed by a new line.
+ *
+ * @str : is a pointer to an array.
+ *
+ * Return: not return.
+ */
 
 void _puts(char *str)
 {
