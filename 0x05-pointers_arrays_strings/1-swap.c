@@ -3,7 +3,7 @@
 /**
  * swap_int - check the code for Holberton School students.
  *
- * @n : pointer *n
+ * @a : pointer *n
  * @b : pointer *b
  * Return: not return
  */
