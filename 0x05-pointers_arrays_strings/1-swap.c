@@ -1,5 +1,12 @@
 #include "holberton.h"
 
+/**
+ * swap_int - check the code for Holberton School students.
+ *
+ * @n : pointer *n
+ * @b : pointer *b
+ * Return: not return
+ */
 void swap_int(int *a, int *b)
 {
 	int d;

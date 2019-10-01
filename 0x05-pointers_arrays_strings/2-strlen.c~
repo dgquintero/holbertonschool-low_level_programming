@@ -1,0 +1,13 @@
+#include "holberton.h"
+
+/**
+ * _strlen - check the code for Holberton School students.
+ *
+ * @s : is a ponter.
+ *
+ * Return: the lenght of a string
+ */
+int _strlen(char *s)
+{
+	char *s[];
+}
