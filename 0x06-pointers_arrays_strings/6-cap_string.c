@@ -9,7 +9,7 @@
 
 char *cap_string(char *d)
 {
-	int a,b;
+	int a, b;
 	char sep[] = {10, 9, 32, 44, 46, 59, 33, 63, 34, 40, 41, 123, 125};
 
 	for (a = 0; d[a] != '\0'; a++)
