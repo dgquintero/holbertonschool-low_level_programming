@@ -17,8 +17,10 @@ int _strcmp(char *s1, char *s2)
 		if (s1[b] == s2[b])
 			a = s1[b] - s2[b];
 		else
+		{
 			a = s1[b] - s2[b];
-		break;
+			break;
+		}
 	}
 	return (a);
 }
