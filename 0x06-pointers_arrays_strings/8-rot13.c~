@@ -1,0 +1,27 @@
+#include <stdio.h>
+/**
+ * *leet - function that concatenates two strings
+ *
+ * @c : parameter to check
+ *
+ * Return: string encoding with 1337.
+ */
+char *rot13(char *c)
+{
+	int a, b;
+	char let[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
+	char num[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
+
+	for (a = 0; c[a] != '\0'; a++)
+	{
+		for (b = 0; let[b] != '\0'; b++)
+		{
+			if (c[a] == let[b])
+			{
+				c[a] = num[b];
+				break;
+			}
+		}
+	}
+	return (c);
+}
