@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * simple_print_buffer - prints buffer in hexa
+ * *_memset - prints buffer in hexafills memory with a constant byte
  * @s: the address of memory to print
  * @n: the size of the memory to print
  * @b: constant

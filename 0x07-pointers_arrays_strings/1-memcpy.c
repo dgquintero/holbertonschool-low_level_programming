@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * simple_print_buffer - prints buffer in hexa
+ * *_memcpy - copies memory area
  * @dest: the address of memory to print
  * @n: the size of the memory to print
  * @src: the address of memory area to be copied
