@@ -3,7 +3,7 @@
  * *_strpbrk - locates the first ocurrence in the string s
  * @s: the address of memory to print
  *
- * @char: the address of memory area to be copied
+ * @accept: the address of memory area to be copied
  * Return: a pointer to the byte in s or NULL if no such byte is found
  */
 
