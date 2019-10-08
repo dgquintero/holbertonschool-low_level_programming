@@ -1,9 +1,9 @@
 #include "holberton.h"
 /**
- * *_strchr - locates a character in a string
- * @s: the address of memory to print
+ * *_strstr - locates a substring
+ * @haystack: pointer to a char
  *
- * @c: the address of memory area to be copied
+ * @needle: pointer to a char
  * Return: a pointer to the first ocurrence of the chcaracter c
  */
 
@@ -11,11 +11,15 @@ char *_strstr(char *haystack, char *needle)
 {
 	int a, b;
 
+	if (haystack == '\0')
+		return ('\0');
+	if (needle == '\0')
+		return ('\0');
 	for (a = 0; (*(haystack + a)) ; a++)
 	{
 		for (b = 0; (*(needle + b)); b++)
 		{
-			if (*(haystack + a) == (*(needle + b))
+			if (*(haystack + a) == *(needle + b))
 				return (haystack + a);
 
 		}
