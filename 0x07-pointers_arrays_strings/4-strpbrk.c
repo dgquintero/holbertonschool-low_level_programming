@@ -1,15 +1,15 @@
 #include "holberton.h"
 /**
- * *_memcpy - copies memory area
- * @dest: the address of memory to print
- * @n: the size of the memory to print
- * @src: the address of memory area to be copied
- * Return: a pointer to the memory area.
+ * *_strpbrk - locates the first ocurrence in the string s
+ * @s: the address of memory to print
+ *
+ * @char: the address of memory area to be copied
+ * Return: a pointer to the byte in s or NULL if no such byte is found
  */
 
-unsigned int _strspn(char *s, char *accept)
+char *_strpbrk(char *s, char *accept)
 {
-	int a, b, c = 0;
+	int a, b;
 
 	for (a = 0; (*(s + a)) ; a++)
 	{
@@ -17,12 +17,12 @@ unsigned int _strspn(char *s, char *accept)
 		{
 			if (*(s + a) == *(accept + b))
 			{
-				c++;
-				break;
+				return (s + a);
+
 			}
 		}
-		if (*(accept + b) == '\0')
-			break;
+		if (*(s + b) == b)
+			return (s + a);
 	}
-	return (c);
+	return (0);
 }
