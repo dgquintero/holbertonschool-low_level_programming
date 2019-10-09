@@ -1,9 +1,9 @@
 #include "holberton.h"
 
 /**
- * _puts_recursion - function that prints a string
+ * factorial - function that prints a string
  *
- * @s :  pointer to a char
+ * @n :  integer
  * Return: Nothing.
  */
 int factorial(int n)
@@ -13,6 +13,8 @@ int factorial(int n)
 		return (-1);
 	}
 	if (n == 0)
+	{
 		return (1);
+	}
 	return (n * factorial(n - 1));
 }
