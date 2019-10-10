@@ -2,8 +2,8 @@
 
 /**
  * _pow_recursion - returns the value of x raised to the power of y
- *
- * @s :  pointer to a char
+ * @x : pointer to an integer
+ * @y : pointer to an integer
  * Return: a variable.
  */
 int _pow_recursion(int x, int y)
