@@ -1,36 +1,55 @@
 #include "holberton.h"
-int _low(int n, int y);
+int _palin(char *d);
+int after(char *i, int j);
 
 /**
- * _sqrt_recursion - check the code for Holberton School students.
- * @n : variable to check.
- * Return: Always.
+ * is_palindrome - check the code for Holberton School students.
+ * @s : pointer to a char.
+ * Return: 1.
  */
-int int is_palindrome(char *s)(int n)
+int is_palindrome(char *s)
 {
-	return (_low(n, 0));
+	if (*s == '\0')
+		return (1);
+	return (after(s, _palin(s)));
 }
 
-
 /**
- * _low -  returns the natural square root of a number
- * @n : variable to check
- * @y : variable to check
+ * _palin -  check the code for Holberton School students
+ * @d : pointer to a char
+ *
  * Return: a variable.
  */
-int _palin(char *s, int i)
+
+int _palin(char *d)
 {
-	if (*s != '\0')
+	int e = 0;
+
+	if (*d != '\0')
 	{
-		return (-1);
+		e++;
+		e = e + _palin(d + 1);
 	}
-	if (n <= 0)
+	return (e);
+}
+
+/**
+ * after - check the code for Holberton School students
+ * @i : pointer to a char
+ * @j : variable integer
+ * Return: 1 or 0
+ */
+int after(char *i, int j)
+{
+
+	if (j >= j / 2)
 	{
-		return (-1);
-	}
-	if (n == y * y)
-	{
-		return (y);
-	}
-	return (_low(n, (y + 1)));
+		if (*i == i[j - 1])
+		{
+			return (after(i + 1, j - 2));
+		}
+		else
+			return (0);
+		}
+		return (1);
 }
