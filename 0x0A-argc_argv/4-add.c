@@ -10,8 +10,9 @@
 
 int main(int argc, char *argv[])
 {
-	int i, j, d;
-
+	int i, j, d, h = 0;
+	if (argc == 1)
+		printf("%d\n", h);
 	for (i = 0; i < argc; i++)
 	{
 		for (j= 0; argv[i][j] != '\0'; j++)
@@ -21,7 +22,7 @@ int main(int argc, char *argv[])
 			    printf("Error\n");
 			    return (1);
 			}
-			d += atoi(arv[i]);
+			d += atoi(argv[i]);
 		}
 	printf("%d\n", d);
 	}
