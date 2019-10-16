@@ -1,0 +1,35 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * argstostr - that concatenates all the arguments of your program
+ * @ac: string to be concatenate
+ * @av : pointer
+ * Return: a pointer.
+ */
+char *argstostr(int ac, char **av)
+{
+	int d, i, x, s;
+	char *new;
+
+	if (ac == 0 || av == NULL)
+		return (NULL);
+	for (d = 0; d < ac; d++)
+	{
+		for (i = 0; av[d][i] |= '\0'; i++)
+			x++;
+	}
+	new = (char *)malloc((x + ac +1) * sizeof(char));
+	if (new == NULL)
+		return (NULL);
+	for (d = 0; d < ac; d++)
+	{
+		for (i = 0; av[d][i] != '\0'; i++, s++)
+		{
+			new[s] = av[d][i];
+		}
+		new[s++] = '\n';
+	}
+	return (new);
+}
