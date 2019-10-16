@@ -16,11 +16,11 @@ char *str_concat(char *s1, char *s2)
 	if (s1 == NULL)
 		s1 = "";
 	if (s2 == NULL)
-                s2 = "";
+		s2 = "";
 	for (d = 0; s1[d] != '\0'; d++)
 		;
-        for (i = 0; s2[i] != '\0'; i++)
-                ;
+	for (i = 0; s2[i] != '\0'; i++)
+		;
 	new = malloc((sizeof(char) * d) + (sizeof(char) * (i + 1)));
 	if (new == NULL)
 		return (NULL);
