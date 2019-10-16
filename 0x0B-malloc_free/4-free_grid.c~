@@ -1,0 +1,19 @@
+#include "holberton.h"
+#include <stdio.h>
+#include <stdlib.h>
+
+/**
+ * free_grid - that frees a 2 dimensional
+ * @grid : string to be concatenate
+ * @height : string to be concatenate
+ * Return : a pointer.
+ */
+void free_grid(int **grid, int height)
+{
+	int d;
+	for (d = 0; d < height; d++)
+	{
+		free(grid[d]);
+	}
+	free(grid);
+}
