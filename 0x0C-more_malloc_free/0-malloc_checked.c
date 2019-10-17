@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * create_array - allocates memory using malloc
+ * malloc_checked - allocates memory using malloc
  * @b : the size of memory to print
  *
  * Return: Nothing.
