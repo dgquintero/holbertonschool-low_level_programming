@@ -3,11 +3,11 @@
 #include "dog.h"
 
 /**
- * init_dog - that initialize a variable of type struct dog
+ * new_dog - that creates a new dog
  * @name : The Name of the dog
  * @age : the age of the dog
  * @owner : the owner of the dog
- * Return: Always 0.
+ * Return: Nothing
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
