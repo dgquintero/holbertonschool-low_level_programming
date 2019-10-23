@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+/**
+ * print_name - prints a name as is
+ * @array: pointer to the name of the person
+ * @size : pointer to check.
+ *
+ * Return: Nothing.
+ */
+void array_iterator(int *array, size_t size, void (*action)(int))
+{
+	unsigned int i;
+	if (array && size && action)
+		for (i = 0; i < size; i++)
+			action(array[i]);
+}
