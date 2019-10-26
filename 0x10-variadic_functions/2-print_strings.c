@@ -1,12 +1,8 @@
-#include <stdio.h>
 #include "variadic_functions.h"
-#include <stdarg.h>
-
 /**
- * print_strings: function that prints strings.
- * @n : cons unsigned int
- * @separator : pointer
- *
+ * print_strings - function that prints strings followed by a new line.
+ * @n: cons unsigned int
+ * @separator: cons pointer to a char
  * Return: Nothing.
  */
 void print_strings(const char *separator, const unsigned int n, ...)
