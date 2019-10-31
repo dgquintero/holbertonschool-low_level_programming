@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * print_list - function taht prints all the elements of a list
+ * list_len - hat returns the number of elements in a linked list.
  * @h : const - list_t
  *
  *
- * Return: the number of notes.
+ * Return: the number of elements.
  */
 
 size_t list_len(const list_t *h)
