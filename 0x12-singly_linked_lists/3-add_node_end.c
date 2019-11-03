@@ -4,32 +4,42 @@
 #include "lists.h"
 /**
  * add_node_end -that adds a new node at the end
- * @head : const - list_t
- * @str:
+ * @head : pointer to pointer - list_t
+ * @str: ocnst char
  *
  * Return: the number of notes.
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *h;
-	unsigned int i;
+	list_t *h, *c;
+	unsigned int i = 0;
+
+	c = *head;
 
 	h = malloc(sizeof(list_t));
 	if (h == NULL)
 		return (NULL);
-	for (; (*head)->next != NULL;)
-		(*head) = (*head)->next;
-	for (i = 0; str[i] != '\0'; i++)
-		;
 	h->str = strdup(str);
 	if (h->str == NULL)
 	{
 		free(h);
-		return(NULL);
+		return (NULL);
 	}
-	h = (*head)->next;
-        h->next = NULL;
-	*head = h;
-	return (h);
+       	while (h->str[i] != '\0')
+		i++;
+	h->len = i;
+	if (*head == NULL)
+	{
+		h->next = (*head);
+		*head = h;
+	}
+	else
+	{
+		while (c->next != NULL)
+			c = c->next;
+		h->next = c->next;
+		c->next = h;
+	}
+	return (*head);
 }
