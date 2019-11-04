@@ -2,10 +2,19 @@
 #include <string.h>
 #include <stdio.h>
 #include "lists.h"
+/**
+ * free_list - function frees a list_t list
+ * @head : pointer - list_t
+ *
+ *
+ * Return: Nothing.
+ */
+
 void free_list(list_t *head)
 {
 	list_t *new;
-	if(head != NULL)
+
+	if (head != NULL)
 	{
 		while (head->next != NULL)
 		{
