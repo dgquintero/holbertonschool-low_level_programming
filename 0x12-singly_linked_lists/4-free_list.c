@@ -23,7 +23,7 @@ void free_list(list_t *head)
 			free(head);
 			head = new;
 		}
-	}
 		free(head->str);
 		free(head);
+	}
 }
