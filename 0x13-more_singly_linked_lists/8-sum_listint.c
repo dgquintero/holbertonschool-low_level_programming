@@ -3,11 +3,11 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * add_nodeint_end - function that adds a new node at the end
- * @head : pointer to pointer - list_t
- * @n: ocnst char
+ * sum_listint - function that returns the sum of all the data
+ * @head : pointer to a list - list_t
  *
- * Return: he address of the new element.
+ *
+ * Return: the sum of all the data n
  */
 
 int sum_listint(listint_t *head)
@@ -15,6 +15,8 @@ int sum_listint(listint_t *head)
 	int sum;
 	listint_t *tmp = head;
 
+	if (head == NULL)
+		return (0);
 	while (tmp != NULL)
 	{
 		sum += tmp->n;
