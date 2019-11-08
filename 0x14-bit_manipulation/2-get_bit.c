@@ -1,38 +1,16 @@
 #include <stdio.h>
 #include "holberton.h"
 /**
- * binary_to_uint - function that converts a binary number to an unsigned int
- *
- * @b : pointer to a string.
- * Return: The converted number
+ * get_bit - function that returns the value of a bit at a given index
+ * @index : the index
+ * @n : unsigned long int
+ * Return: The valeu of the bit at index.
  */
-void print_binary(unsigned long int n)
+int get_bit(unsigned long int n, unsigned int index)
 {
-	int i;
-	unsigned long int msk;
-
-	msk = 1UL << 63;
-	if(n == 0)
-	{
-		_putchar('0');
-		return;
-	}
-	if(n == 1)
-	{
-		_putchar('1');
-		return;
-	}
-	for( ; msk > 0; msk = msk >>1)
-	{
-		if(n & msk)
-		{
-			_putchar('1');
-			i = 1;
-		}
-		else
-		{
-			if(i)
-				_putchar('0');
-		}
-	}
+	if (index > 63)
+		return (-1);
+	if (n & (1 << index))
+		return (1);
+	return (0);
 }
