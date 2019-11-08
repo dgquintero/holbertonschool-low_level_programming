@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include "holberton.h"
+/**
+ * print_binary - function that prints the binary
+ *
+ * @n : number to be changed.
+ * Return: Nothing
+ */
+void print_binary(unsigned long int n)
+{
+	int i;
+	unsigned long int msk;
+
+	msk = 1UL << 63;
+	if (n == 0)
+	{
+		_putchar('0');
+		return;
+	}
+	if (n == 1)
+	{
+		_putchar('1');
+		return;
+	}
+	for ( ; msk > 0; msk = msk >> 1)
+	{
+		if (n & msk)
+		{
+			_putchar('1');
+			i = 1;
+		}
+		else
+		{
+			if (i)
+				_putchar('0');
+		}
+	}
+}
