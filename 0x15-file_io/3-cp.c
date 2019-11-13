@@ -47,7 +47,7 @@ int main(int argc, char **argv)
 	} while (rd == 1024);
 
 	if (rd == -1)
-		errmsg(98, "Error: Can't close fd", argv[1]);
+		errmsg(98, "Error: Can't read from file", argv[1]);
 
 	if (wr == -1)
 		errmsg(99, "Error: Can't write to", argv[2]);
