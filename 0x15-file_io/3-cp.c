@@ -10,7 +10,7 @@
 
 void errmsg(int ex, const char *ms, const char *file)
 {
-	dprintf(STDERR_FILENO. "%s %s\n", ms, file);
+	dprintf(STDERR_FILENO, "%s %s\n", ms, file);
 	exit(ex);
 }
 
@@ -39,8 +39,8 @@ int main(int argc, char **argv)
 	fdto = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 
 	if (fdto == -1)
-		errorMsg(99, "Error: Can't write to", argv[2]);
-	for (rd = read(fdfrom, b, rd); rd > 0; rd = read(fdfrom, b, blenght))
+		errmsg(99, "Error: Can't write to", argv[2]);
+	for (rd = read(fdfrom, b, blenght); rd > 0; rd = read(fdfrom, b, blenght))
 	{
 		wr = write(fdto, b, rd);
 		if (wr == -1)
