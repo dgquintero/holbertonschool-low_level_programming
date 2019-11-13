@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 	}
 
 	if (rd == -1)
-		errmsg(100, "Error: Can't close fd", argv[1]);
+		errmsg(98, "Error: Can't close fd", argv[1]);
 
 	clofrom = close(fdfrom);
 
