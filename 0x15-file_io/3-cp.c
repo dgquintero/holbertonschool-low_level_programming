@@ -23,7 +23,7 @@ void errmsg(int ex, const char *ms, const char *file)
  */
 int main(int argc, char **argv)
 {
-	int fdfrom, fdto, rd, wr, blenght = 1024, clofrom, cloto;
+	int fdfrom, fdto, rd, wr, clofrom, cloto;
 	char b[1024];
 
 	if (argc != 3)
@@ -40,15 +40,17 @@ int main(int argc, char **argv)
 
 	if (fdto == -1)
 		errmsg(99, "Error: Can't write to", argv[2]);
-	for (rd = read(fdfrom, b, blenght); rd > 0; rd = read(fdfrom, b, blenght))
-	{
+
+	do {
+		rd = read(fdfrom, b, 1024);
 		wr = write(fdto, b, rd);
-		if (wr == -1)
-			errmsg(99, "Error: Can't write to", argv[2]);
-	}
+	} while (rd == 1024);
 
 	if (rd == -1)
 		errmsg(98, "Error: Can't close fd", argv[1]);
+
+	if (wr == -1)
+		errmsg(99, "Error: Can't write to", argv[2]);
 
 	clofrom = close(fdfrom);
 
