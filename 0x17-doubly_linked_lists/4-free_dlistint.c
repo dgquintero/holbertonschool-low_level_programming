@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * free_dlistint - function frees a listint_t list
+ * free_dlistint - function frees a dlistint_t list
  * @head : pointer - list_t
  *
  *
