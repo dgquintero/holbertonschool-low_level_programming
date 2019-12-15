@@ -3,10 +3,8 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * sum_listint - function that returns the sum of all the data
+ * sum_dlistint - function that returns the sum of all the data
  * @head : pointer to a list - list_t
- *
- *
  * Return: the sum of all the data n
  */
 int sum_dlistint(dlistint_t *head)
