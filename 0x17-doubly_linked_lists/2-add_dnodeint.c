@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * add_nodeint - adds a new node at the beginning
+ * add_dnodeint - adds a new node at the beginning
  * @head : const - list_t
  * @n: const int
  *
