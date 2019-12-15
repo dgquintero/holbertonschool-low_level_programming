@@ -3,7 +3,7 @@
 #include <stdio.h>
 #include "lists.h"
 /**
- * dlistint_t -function t hat returns the number of elements in a dlinked list.
+ * dlistint_len -function that returns the number of elements in a dlinked list
  * @h : const - list_t
  *
  *
