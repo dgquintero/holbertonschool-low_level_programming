@@ -1,0 +1,20 @@
+int _add(a, b)
+{
+	return (a + b);
+}
+int sub(a, b)
+{
+	return (a - b);
+}
+int _mul(a, b)
+{
+        return (a * b);
+}
+int _div(a, b)
+{
+        return (a / b);
+}
+int _mod(a, b)
+{
+        return (a % b);
+}
