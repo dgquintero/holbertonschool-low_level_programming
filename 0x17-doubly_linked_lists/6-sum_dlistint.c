@@ -9,8 +9,8 @@
  */
 int sum_dlistint(dlistint_t *head)
 {
-	size_t sum;
-	const dlistint_t *tmp = head;
+	int sum = 0;
+	dlistint_t *tmp = head;
 
 	if (tmp == NULL)
 		return (0);
