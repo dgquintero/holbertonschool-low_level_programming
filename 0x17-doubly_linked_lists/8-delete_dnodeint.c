@@ -14,10 +14,9 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *tail, *node;
 
+	tail = *head;
 	if (*head == NULL || tail == NULL)
 		return (-1);
-	tail = *head;
-
 	if (index == 0)
 	{
 		tail = tail->next;
